@@ -1,0 +1,38 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+ul.menu li{
+    position: relative;
+    margin: 5px;
+}
+ul.menu{
+    
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+ul.menu a {
+    display: inline-block;
+    background-color: rgb(10, 91, 129);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+ul.caixinha{
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(10, 91, 129);
+    list-style: none;
+    z-index: 1;
+}
+ul.caixinha a{
+    visibility: visi;
+    padding: 5px 10px;
+}
+ul.menu li:hover .caixinha{
+    visibility: visible;
+}
+
