@@ -1,0 +1,190 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  box-sizing: border-box;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "w w w w w"
+    "a b e e g"
+    "a c f h i"
+    "a d f j j"
+    "z z z z z";
+  gap: 1em;
+}
+
+div {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px #e7dcdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+
+  padding: 0; 
+  overflow: hidden;
+}
+
+div img{
+   width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 6px; 
+}
+div span {
+  position: absolute;
+  bottom: 0;  
+  left: 0;
+  width: 100%; 
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px black;
+  font-size: 16px;
+  z-index: 2;
+  text-align: center;     
+  background-color: rgba(0, 0, 0, 0.329);
+  padding: 10px 0; 
+  box-sizing: border-box;
+  border-radius: 0 0 6px 6px; 
+}
+
+div#a {
+  grid-area: a;
+  background-color: #afdbf8;
+  width: 240px;
+  padding: 20px;
+  border-radius: 4px;
+  height: auto;
+}
+div#a li{
+  list-style: none;
+  font-size: 25px;
+  color: #224459;
+  padding: 15px 0;
+}
+
+div#b {
+  grid-area: b;
+  height: 10em;
+  overflow:hidden;
+  
+}
+
+div#c {
+  grid-area: c;
+  height: 10em;
+}
+
+div#d {
+  grid-area: d;
+  height: 10em;
+}
+
+div#e {
+  grid-area: e;
+  background-color: #eeeeee;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block; 
+  min-height: auto; 
+}
+
+div#e h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+div#e table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+div#e th,
+div#e td {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+div#e th {
+  background-color: #f8f8f8;
+}
+div#f {
+  grid-area: f;
+}
+div#f button{
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+div#f input[type="text"],
+div#f input[type="email"],
+div#f input[type="tel"]{
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+div#f form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+div#g {
+  grid-area: g;
+  height: 10em;
+}
+
+div#h {
+  grid-area: h;
+  height: 10em;
+}
+
+div#i {
+  grid-area: i;
+  height: 10em;
+}
+
+div#j {
+  grid-area: j;
+  height: 10em;
+}
+
+header {
+  grid-area: w;
+  background: linear-gradient(to left, #7292A6, #224459);
+  height: 10vh;
+  color: #ddd;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+footer {
+  grid-area: z;
+  background: linear-gradient(to left, #7292A6, #224459);
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: auto;
+}
